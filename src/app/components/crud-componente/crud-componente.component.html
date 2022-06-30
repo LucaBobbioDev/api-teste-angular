@@ -1,0 +1,10 @@
+<div>
+    <p>
+        <b>Método GET</b>
+    </p>
+    <div *ngFor="let image of images">
+        <p>{{image.title}}</p>
+        <img [attr.src]="image.url">
+    </div>
+</div>
+
