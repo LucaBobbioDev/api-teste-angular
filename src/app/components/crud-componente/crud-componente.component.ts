@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import Images from 'src/app/interface/Images';
 import { ServicesService } from 'src/app/services/services.service';
+
+import Images from 'src/app/interface/Images';
 
 @Component({
   selector: 'app-crud-componente',
@@ -9,7 +10,7 @@ import { ServicesService } from 'src/app/services/services.service';
 })
 export class CrudComponenteComponent implements OnInit {
   images: Images[] = [];
-  
+
   constructor(private crudService: ServicesService) { 
     this.getter();
   }
